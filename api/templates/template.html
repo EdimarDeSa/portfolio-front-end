@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    {% block title %} {% endblock %}
+</head>
+<body class="geral">
+    <header class="cabecalho">
+        <nav class="cabecalho__menus">
+            <a class="cabecalho__menus--hover" href="principal">Principal</a>
+            <a class="cabecalho__menus--hover" href="sobre">Sobre mim</a>
+            <a class="cabecalho__menus--hover" href="curriculo">Curriculo</a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="main__conteudo">{% block content %} {% endblock %}</div>
+
+        <div class="main__foto">
+            <img class="main__foto--img" src="./static/img/Edimar.jpeg" alt="Foto de Edimar">
+        </div>
+    </main>
+    
+    <footer class="rodape">
+        <p class="rodape__copy">Copyright &copy; Desenvolvido por Edimar Freitas de Sá</p>
+    </footer>
+</body>
+</html>
