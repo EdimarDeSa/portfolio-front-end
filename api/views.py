@@ -1,6 +1,6 @@
 from flask import render_template, url_for, redirect
 
-from index import app
+from api.index import app
 from api.models import *
 
 
