@@ -1,0 +1,8 @@
+.idea/
+.venv/
+.git/
+.vs/
+__pycache__/
+
+
+*.bat
