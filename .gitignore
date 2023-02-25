@@ -1,8 +1,22 @@
-.idea/
+# Enviorement
 .venv/
-.git/
+
+# Pycharm
+.idea/
+
+# VS Code
 .vs/
+
+# Git
+.git/
+
+# Python
 __pycache__/
+*.pyc
 
-
+# Bat files
 *.bat
+
+# Outros
+.vercel
+*.log
